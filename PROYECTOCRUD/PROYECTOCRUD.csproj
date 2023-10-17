@@ -163,12 +163,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccesoController.cs" />
+    <Compile Include="Controllers\ColaEstudiantesController.cs" />
+    <Compile Include="Controllers\EstudiantesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InscripcionEstudiantesController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Data\AppDBContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ColaEstudiante.cs" />
+    <Compile Include="Models\Estudiante.cs" />
+    <Compile Include="Models\InscripcionEstudiante.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -220,6 +226,24 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Estudiantes\Create.cshtml" />
+    <Content Include="Views\Estudiantes\Delete.cshtml" />
+    <Content Include="Views\Estudiantes\Details.cshtml" />
+    <Content Include="Views\Estudiantes\Edit.cshtml" />
+    <Content Include="Views\Estudiantes\Index.cshtml" />
+    <Content Include="Views\Estudiantes\Busqueda.cshtml" />
+    <Content Include="Views\Estudiantes\AgregarCola.cshtml" />
+    <Content Include="Views\ColaEstudiantes\Create.cshtml" />
+    <Content Include="Views\ColaEstudiantes\Delete.cshtml" />
+    <Content Include="Views\ColaEstudiantes\Details.cshtml" />
+    <Content Include="Views\ColaEstudiantes\Edit.cshtml" />
+    <Content Include="Views\ColaEstudiantes\Index.cshtml" />
+    <Content Include="Views\ColaEstudiantes\InscripcionEstudiante.cshtml" />
+    <Content Include="Views\InscripcionEstudiantes\Create.cshtml" />
+    <Content Include="Views\InscripcionEstudiantes\Delete.cshtml" />
+    <Content Include="Views\InscripcionEstudiantes\Details.cshtml" />
+    <Content Include="Views\InscripcionEstudiantes\Edit.cshtml" />
+    <Content Include="Views\InscripcionEstudiantes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

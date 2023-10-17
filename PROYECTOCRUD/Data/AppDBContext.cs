@@ -15,5 +15,11 @@ namespace PROYECTOCRUD.Data
         }
 
         public DbSet<Usuario> usuarios { get; set; }
+
+        public DbSet<Estudiante> estudiantes { get; set; }
+
+        public DbSet<ColaEstudiante> colaEstudiantes { get; set; }
+
+        public DbSet<InscripcionEstudiante> inscripcionEstudiantes { get; set; }
     }
 }

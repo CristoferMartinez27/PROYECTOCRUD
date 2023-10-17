@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PROYECTOCRUD.Models.InscripcionEstudiante>
+
+@{
+    ViewBag.Title = "INSCRIPCION ESTUDIANTES";
+}
+
+<h2>INSCRIPCION ESTUDIANTES</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CARNET)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_NACIMIENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_REGISTRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_ADICION)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.CARNET)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NOMBRE)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FECHA_NACIMIENTO)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FECHA_REGISTRO)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FECHA_ADICION)
+    </td>
+    <td>
+    </td>
+</tr>
+}
+
+</table>
