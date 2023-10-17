@@ -10,7 +10,8 @@ namespace PROYECTOCRUD.Data
     public class AppDBContext : DbContext
     {
         public AppDBContext() : base("AsignacionContext")
-        { 
+        {
+
         }
 
         public DbSet<Usuario> usuarios { get; set; }
