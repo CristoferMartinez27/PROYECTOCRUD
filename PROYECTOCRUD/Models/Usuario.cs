@@ -1,22 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PROYECTOCRUD.Models
 {
+    [Table("USUARIO", Schema = "UNIVERSITY")]
     public class Usuario
     {
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int Id { get; set; }
-
         [Required]
-        [MaxLength(20)]
+        [MaxLength(50)]
         [Display(Name = "Usuario")]
-        public string User { get; set; }
+        public string USER { get; set; }
 
         [Required]
-        [MaxLength(20)]
+        [MaxLength(50)]
         [Display(Name = "Contraseña")]
-        public string Password { get; set; }
-
-        public bool Estado { get; set; }
+        public string PASSWORD { get; set; }
     }
 }
