@@ -38,8 +38,9 @@
             @Html.DisplayFor(modelItem => item.FECHA_ADICION)
         </td>
         <td>
-            @Html.ActionLink("Inscripcion Estudiante", "InscripcionEstudiante", new { id=item.CARNET }) 
-            
+            | @Html.ActionLink("Inscripcion Estudiante", "InscripcionEstudiante", new { id = item.CARNET }, new { @class = "btn btn-success" }) |
+
+
         </td>
     </tr>
 }

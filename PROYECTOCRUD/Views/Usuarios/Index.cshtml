@@ -7,7 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear registro", "Create")
 </p>
 <table class="table">
     <tr>
@@ -29,10 +29,11 @@
         @Html.DisplayFor(modelItem => item.PASSWORD)
     </td>
     <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.USER }) |
-        @Html.ActionLink("Details", "Details", new { id = item.USER }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.USER })
+        @Html.ActionLink("Editar", "Edit", new { id = item.USER }, new { @class = "btn btn-primary" }) |
+        @Html.ActionLink("Detalles", "Details", new { id = item.USER }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = item.USER }, new { @class = "btn btn-danger" })
     </td>
+
 </tr>
 }
 
