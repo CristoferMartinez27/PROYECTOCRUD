@@ -11,8 +11,10 @@ using PROYECTOCRUD.Models;
 
 namespace PROYECTOCRUD.Controllers
 {
+    [Authorize]
     public class EstudiantesController : Controller
     {
+       
         private AppDBContext db = new AppDBContext();
 
         // GET: Estudiantes

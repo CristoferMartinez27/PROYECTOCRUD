@@ -11,6 +11,7 @@ using PROYECTOCRUD.Models;
 
 namespace PROYECTOCRUD.Controllers
 {
+    [Authorize]
     public class InscripcionEstudiantesController : Controller
     {
         private AppDBContext db = new AppDBContext();
@@ -18,7 +19,7 @@ namespace PROYECTOCRUD.Controllers
         // GET: InscripcionEstudiantes
         public ActionResult Index()
         {
-            return View(db.inscripcionEstudiantes.ToList());
+            return View(db.inscripcionEstudiantes.OrderBy(f =>f.FECHA_ADICION).ToList()); //ordenados por fecha adicion
         }
 
         // GET: InscripcionEstudiantes/Details/5

@@ -11,6 +11,7 @@ using PROYECTOCRUD.Models;
 
 namespace PROYECTOCRUD.Controllers
 {
+    [Authorize]
     public class ColaEstudiantesController : Controller
     {
         private AppDBContext db = new AppDBContext();
