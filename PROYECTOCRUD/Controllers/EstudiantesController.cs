@@ -166,6 +166,11 @@ namespace PROYECTOCRUD.Controllers
                 db.colaEstudiantes.Add(colaEstudiante);
                 db.SaveChanges();
 
+                //cambios ingeniero solicitud
+                Estudiante est = db.estudiantes.Find(estudiante.CARNET);
+                db.estudiantes.Remove(est);
+                db.SaveChanges();
+
                 return RedirectToAction("Busqueda");
             }
 
